@@ -1,0 +1,140 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav a:child {
+    font-size: 0.8em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav a{
+    font-size: 0.9em;
+  }
+  .price{
+    border-left: solid gray 1px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav a{
+    font-size: 1em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav a{
+    font-size: 2em;
+  }
+}
+nav a{
+  color: var(--night-mode);
+  font-weight: bolder;
+}
+nav a:first-child{
+  padding-left: 0;
+}
+nav a:last-child{
+  padding-right: 0;
+}
+nav a:hover{
+  color: rgba(255,146,10,1);
+}
+.active{
+  color: rgba(255,146,10,1);
+}
+.bdr{
+  background-color: #e1f1ff;
+  padding-top: 15px;
+}
+.main{
+  padding: 3em;
+}
+.list{
+  list-style-image: url('../../assets/Check.png');
+}
+.highlight{
+  color: #005ef2;
+}
+.slidercontainer{
+  width: 100%;
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.slider{
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 7px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  border: 0;
+  border-radius: 35px;
+  color: white;
+  background: rgba(255,146,10,1);
+  cursor: pointer; /* Cursor on hover */
+  outline: none;
+}
+.slider::-moz-range-thumb {
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  border: 0;
+  border-radius: 35px;
+  color: white;
+  border: none;
+  background: rgba(255,146,10,1);
+
+  cursor: pointer; /* Cursor on hover */
+  outline: none;
+}
+
+
+.emphasis{
+  font-size: 2em;
+}
+.sales-rep{
+  padding: 30px;
+  background-color: #e1f1ff;
+  width: 160px;
+  height: 160px;
+  float: center;
+  font-size: 4em;
+}
+.ttsales{
+  padding-bottom: 3em;
+}
+.ttsales-btn{
+  padding: .3em 2em;
+  border-style: none;
+  border-radius: 50px;
+  color: white;
+  background: #ff920a;
+  background: -moz-linear-gradient(left, #ff920a 0%, #ffc88a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ff920a), color-stop(100%, #ffc88a));
+  background: -webkit-linear-gradient(left, #ff920a 0%, #ffc88a 100%);
+  background: -o-linear-gradient(left, #ff920a 0%, #ffc88a 100%);
+  background: -ms-linear-gradient(left, #ff920a 0%, #ffc88a 100%);
+  background: linear-gradient(to right, #ff920a 0%, #ffc88a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff920a', endColorstr='#ffc88a', GradientType=1 );
+}
+.ttsales-btn:hover{
+  color: #005ef2;
+}
